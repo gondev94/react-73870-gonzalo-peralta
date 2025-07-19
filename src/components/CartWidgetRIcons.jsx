@@ -6,7 +6,7 @@ const CartWidgetIcon = () => {
     return(
         <>
         <BsCart4 fontSize={'1.8rem'} />
-        <Badge bg="danger">5</Badge>
+        <Badge bg="danger" >5</Badge>
         </>
     )
 }

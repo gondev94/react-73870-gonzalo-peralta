@@ -6,6 +6,7 @@ import CartWidgetIcon from './CartWidgetRIcons';
 import '../App.css'
 
 function Navbarr() {
+  console.log('soy navbar')
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -19,7 +20,9 @@ function Navbarr() {
               <NavDropdown.Item href="#action/3.2">
                 Más Vendidos
               </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Nuevos</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
+
 
             </NavDropdown>
           </Nav>
