@@ -2,41 +2,42 @@
 const productos = [
     {
         id:'01',
-        name:'CAFÉ 01',
-        description:'LOREM',
-        price:34,
+        name:'E.CR.ERW',
+        description:'Espresso, Costa Rica - Entre Rios - Variedad: Marsellesa y Obatá (blend de Entre Ríos Sarchimores, cruce originario de Villa Sarchi e Híbrido de Timor)',
+        price:12,
         stock:100,
         category:'nuevos',
-        img:'', // placeholder, host de imagenes o img locales, lo ideal es hostear las img se recomienda en public
+        img:'https://i.postimg.cc/TPmzt8tJ/E-CR-ERW.webp', // placeholder, host de imagenes o img locales, lo ideal es hostear las img se recomienda en public
     },
 
     {
         id:'02',
-        name:'CAFÉ 02',
-        description:'LOREM',
-        price:25,
+        name:'E.RW.INZO',
+        description:'Espresso, Ruanda - Inzovu -  Variedad: Bourbon Rojo ',
+        price:14,
         stock:50,
         category:'más vendidos',
-        img:'', // placeholder, host de imagenes o img locales, lo ideal es hostear las img se recomienda en public
+        img:'https://i.postimg.cc/zB7PQqKK/E-RW-INZO.webp', 
     },
 
     {
         id:'03',
-        name:'CAFÉ 03',
-        description:'LOREM',
-        price:15,
+        name:'D.CO.DCF',
+        description:'Espresso "Descafeinado" - Colombia - Chambakú - Variedad: Castillo',
+        price:13,
         stock:80,
         category:'ofertas',
-        img:'', // no se recomienda usar porque si no hay mas palitos de la selva y si bajan la imagen no existira más
+        img: 'https://i.postimg.cc/P5DVjW1t/decaff.webp'
+        , // no se recomienda usar porque si no hay mas palitos de la selva y si bajan la imagen no existira más
     },
     {
         id:'04',
-        name:'CAFÉ 04',
-        description:'LOREM',
-        price:20,
+        name:'F.BU.GAH',
+        description:'Filtro, Burundí - Gahahe - Variedad Red Bourbon',
+        price:17,
         stock:40,
         category:'ofertas',
-        img:'', // no se recomienda usar img directa  si no hay mas y bajan la imagen no existira más
+        img:'https://i.postimg.cc/J4GdTVnH/F-BU-GAH.webp', // no se recomienda usar img directa  si no hay mas y bajan la imagen no existira más
                 // se usa el enlace directo en postimage
     },
 ]
