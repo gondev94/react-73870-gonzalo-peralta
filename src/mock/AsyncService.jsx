@@ -17,7 +17,7 @@ const productos = [
         price:14,
         stock:50,
         category:'más vendidos',
-        img:'https://i.postimg.cc/zB7PQqKK/E-RW-INZO.webp', 
+        img:'https://i.postimg.cc/zB7PQqKK/E-RW-INZO.webp',
     },
 
     {
@@ -61,3 +61,15 @@ export const getProduct = () => {
 // si queremos simular un error  usamos reject y declamos un if
 
 // esta logica se aplica en el contenedor itemlistcontainer
+
+
+export const getOneProduct = (id) => {
+    return new Promise ((resolve)=>{
+        setTimeout(()=>{
+            //buscamos el producto con el id que se recibe del parámetro 
+            let OneProduct = productos.find((prod)=> prod.id === id)
+            // lo devolvemos 
+            resolve(OneProduct)
+        },2000)
+    })
+}
