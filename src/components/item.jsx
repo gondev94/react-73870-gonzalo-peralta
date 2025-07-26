@@ -1,20 +1,28 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 
+
 const Item = ({prod}) => {
     console.log(prod)
     return (
-    <Card style={{ width: '18rem', margin: 10}}>
-      <Card.Img variant="top" src={prod.img} />
-      <Card.Body>
-        <Card.Title>{prod.name}</Card.Title>
-        <Card.Text>
+    <Card style={{ width: '18rem', margin: 10, alignItems:'center', display:'flex',}} >
+      <Card.Img variant="top" src={prod.img}/>
+      <Card.Body className='d-flex flex-column' >
+        <Card.Title style={{textAlign:'center'}}>{prod.name}</Card.Title>
+        <div className="flex-grow-1">
+        <Card.Text className='text-center'>
            {prod.description}
         </Card.Text>
-           <Card.Text>
+        </div>
+        <div>
+           <Card.Text className="text-center fw-bold m-4" >
           €{prod.price},00
         </Card.Text>
-        <Button variant="primary">Ver más</Button>
+        </div>
+        <div className="mt-auto d-flex justify-content-center">
+
+        <Button variant="primary" >Ver más</Button>
+        </div>
       </Card.Body>
     </Card>
     )

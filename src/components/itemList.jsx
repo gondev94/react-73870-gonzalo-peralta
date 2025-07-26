@@ -3,12 +3,8 @@ import Item from './Item'
 
 const ItemList = ({data}) => {
     return (
-        <div style={{display:'flex', 
-                    justifyContent:'space-between', 
-                    flexWrap:'warp',
-                    alignItems:'center'
-        }}>
-            {data.map((prod)=> <Item key={prod.id} prod={prod}/> )}
+        <div className='row' style={{justifyContent:'center',}} >
+            {data.map((prod)=> <Item key={prod.id} className='col d-flex' prod={prod}/> )}
         </div>
     )
 }
