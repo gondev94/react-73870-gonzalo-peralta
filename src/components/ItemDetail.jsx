@@ -1,6 +1,10 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
 const ItemDetail = ({detalle}) => {
+    const onAdd = (cantidad) => {
+        console.log(`compraste ${cantidad} de productos`)
+    }
     return (
         <div style={{display:'flex', flexDirection:'column', alignItems:'center'}} >
             <h1 style={{fontSize:'3.5rem'}} className='m-4'>Detalle de: {detalle.name}</h1>
@@ -8,6 +12,7 @@ const ItemDetail = ({detalle}) => {
             <p style={{fontSize:'1.7rem'}} className='m-4 fw-bold'>{detalle.description}</p>
             <p style={{fontSize:'1.3rem'}}className='fw-bold'>Stock: {detalle.stock} unidades</p>
             <p style={{fontSize:'1.3rem'}} className='fw-bold'>Precio: €{detalle.price}</p>
+            <ItemCount stock={detalle.stock} onAdd={onAdd}/>
         </div>
     )
 }

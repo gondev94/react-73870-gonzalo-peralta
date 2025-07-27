@@ -1,23 +1,19 @@
 import React,{useEffect, useState} from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({stock, onAdd}) => {
 
     const [count,setCount] = useState(0)
 
     const [compra, setCompra] = useState(false)
 
     const sumar = () => {
+        if(count < stock)
         setCount(count +1)
     }
     const restar = () => {
+        if(count > 0)
         setCount(count -1)
     }
-
-    const comprarProduct = () => {
-        setCompra(!compra)
-    }
-
-    console.log('soy ItemCount')
 
     // ejemplo de useeffect
 
@@ -38,11 +34,13 @@ const ItemCount = () => {
 
 
     return (
-        <div>
+        <div className='d-flex justify-content-center flex-column'>
+            <div>
             <button className='btn btn-danger' onClick={restar}>restar</button>
             <span className='btn'>{count}</span>
             <button className='btn btn-success' onClick={sumar}>sumar</button>
-            <button className='btn btn-primary' onClick={comprarProduct}>comprar</button>
+            </div>
+            <button className='btn btn-primary' disabled={count === 0} onClick={()=> onAdd(count)}>comprar</button>
         </div>
     )
 }
