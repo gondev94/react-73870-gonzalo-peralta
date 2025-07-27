@@ -3,11 +3,11 @@ import React from 'react'
 const ItemDetail = ({detalle}) => {
     return (
         <div style={{display:'flex', flexDirection:'column', alignItems:'center'}} >
-            <h1 className='m-4'>Detalle de: {detalle.name}</h1>
+            <h1 style={{fontSize:'3.5rem'}} className='m-4'>Detalle de: {detalle.name}</h1>
             <img src={detalle.img} alt={detalle.name} />
-            <p className='m-4'>{detalle.description}</p>
-            <p>Stock: {detalle.stock}</p>
-            <p>Precio: €{detalle.price}</p>
+            <p style={{fontSize:'1.7rem'}} className='m-4 fw-bold'>{detalle.description}</p>
+            <p style={{fontSize:'1.3rem'}}className='fw-bold'>Stock: {detalle.stock} unidades</p>
+            <p style={{fontSize:'1.3rem'}} className='fw-bold'>Precio: €{detalle.price}</p>
         </div>
     )
 }
