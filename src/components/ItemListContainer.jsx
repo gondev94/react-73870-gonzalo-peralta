@@ -28,7 +28,7 @@ const ItemListContainer = ({saludo}) => {
 console.log(data,'data')
     return (
         <div>
-            <h1>{saludo}</h1>
+            <h1 style={{textAlign:'center'}}>{saludo} {category}</h1>
             {/* no muy recomendale */}
             {/* {data.map((producto,index)=> <p key={index}> {producto.name} </p> */}
             {/* recomendale */}
