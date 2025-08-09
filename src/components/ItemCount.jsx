@@ -15,6 +15,10 @@ const ItemCount = ({stock, onAdd}) => {
         setCount(count -1)
     }
 
+    const comprar = () => {
+        onAdd(count)
+    }
+
     // ejemplo de useeffect
 
     // se va a ejecvutar siempre que se monte y actualice el componente
@@ -40,7 +44,7 @@ const ItemCount = ({stock, onAdd}) => {
             <span className='btn'>{count}</span>
             <button className='btn btn-success' onClick={sumar}>sumar</button>
             </div>
-            <button className='btn btn-primary' disabled={count === 0} onClick={()=> onAdd(count)}>comprar</button>
+            <button className='btn btn-primary' disabled={count === 0} onClick={comprar}>comprar</button>
         </div>
     )
 }
