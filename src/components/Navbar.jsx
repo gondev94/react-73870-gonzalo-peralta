@@ -5,8 +5,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidgetIcon from './CartWidgetRIcons';
 import '../App.css'
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 function Navbarr() {
+  const {cart} = useContext(CartContext);
   console.log('soy navbar')
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -26,7 +29,7 @@ function Navbarr() {
               <NavDropdown.Item as={NavLink} to='/categories/ofertas'>Ofertas</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <CartWidgetIcon/>
+          {cart.length > 0 && <NavLink to='/cart'> <CartWidgetIcon/> </NavLink>}
         </Navbar.Collapse>
       </Container>
     </Navbar>
