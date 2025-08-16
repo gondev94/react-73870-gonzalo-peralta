@@ -9,7 +9,7 @@ const Checkout = () => {
     const [buyer, setBuyer] = useState({})
     const [validMail, setValidMail] = useState('')
     const [orderId, setOrderId] = useState('')
-    const {cart, cartTotal} = useContext(CartContext)
+    const {cart, clear, cartTotal} = useContext(CartContext)
     const buyerData = (e) =>{
         setBuyer(
             {
@@ -23,6 +23,11 @@ const Checkout = () => {
     const finalizarCompra = (e) => {
         //hacer que no recargue la pagina
         e.preventDefault()
+        if(!buyer.name || !buyer.lastname || !buyer.address || !buyer.email){
+            console.log('Complete todos los campos')
+        }else if(buyer.email !== validMail){
+            console.log('Los correos no coinciden')
+        }else{
         let order = {
             comprador:buyer,
             compras:cart,
@@ -34,11 +39,11 @@ const Checkout = () => {
         addDoc(ventas, order)
         .then((res)=>{
             setOrderId(res.id)
-            clearImmediate()
+            clear()
         })
         .catch((error)=> console.log(error))
+        }
     }
-    
     return (
         <>
         {
