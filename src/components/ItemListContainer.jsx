@@ -62,7 +62,7 @@ console.log(data,'data')
         {loading
         ? <LoaderComponent/>
         : <div>
-            <h1>{saludo}</h1>
+            <h1>{saludo} {category}</h1>
             <ItemList data={data}/>
         </div>
         }
