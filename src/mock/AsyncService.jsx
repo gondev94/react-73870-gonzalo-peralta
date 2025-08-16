@@ -7,7 +7,7 @@ const productos = [
         price:12,
         stock:100,
         category:'nuevos',
-        process:'espresso',
+        process:'washed',
         img:'https://i.postimg.cc/TPmzt8tJ/E-CR-ERW.webp', // placeholder, host de imagenes o img locales, lo ideal es hostear las img se recomienda en public
     },
 
@@ -17,8 +17,8 @@ const productos = [
         description:'Espresso, Ruanda - Inzovu -  Variedad: Bourbon Rojo ',
         price:14,
         stock:50,
-        category:'mas vendidos',
-        process:'espresso',
+        category:'más vendidos',
+        process:'natural',
         img:'https://i.postimg.cc/zB7PQqKK/E-RW-INZO.webp',
     },
 
@@ -29,9 +29,8 @@ const productos = [
         price:13,
         stock:80,
         category:'ofertas',
-        process:'descafeinado',
-        img: 'https://i.postimg.cc/P5DVjW1t/decaff.webp'
-        , // no se recomienda usar porque si no hay mas palitos de la selva y si bajan la imagen no existira más
+        process:'washed',
+        img: 'https://i.postimg.cc/P5DVjW1t/decaff.webp', // no se recomienda usar porque si no hay mas palitos de la selva y si bajan la imagen no existira más
     },
     {
         id:'04',
@@ -40,7 +39,7 @@ const productos = [
         price:17,
         stock:40,
         category:'ofertas',
-        process:'filter',
+        process:'washed',
         img:'https://i.postimg.cc/J4GdTVnH/F-BU-GAH.webp', // no se recomienda usar img directa  si no hay mas y bajan la imagen no existira más
                 // se usa el enlace directo en postimage
     },

@@ -40,9 +40,9 @@ const ItemCount = ({stock, onAdd}) => {
     return (
         <div className='d-flex justify-content-center flex-column'>
             <div>
-            <button className='btn btn-danger' onClick={restar}>restar</button>
+            <button className='btn btn-danger' onClick={restar}>-</button>
             <span className='btn'>{count}</span>
-            <button className='btn btn-success' onClick={sumar}>sumar</button>
+            <button className='btn btn-success' onClick={sumar}>+</button>
             </div>
             <button className='btn btn-primary' disabled={count === 0} onClick={comprar}>comprar</button>
         </div>
