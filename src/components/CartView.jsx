@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
 
 const CartView = () => {
   const {cart, clear, removeItem, cartTotal} = useContext(CartContext)
+  
     return (
     <div>
       <h1>Tu carrito</h1>
