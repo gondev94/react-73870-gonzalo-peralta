@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
     return(
         <div style={{display:'flex',flexDirection:'column',alignItems:'center', marginTop:15}}>
-            <img src="https://i.postimg.cc/FKVX9GYD/404notfound.jpg" alt="Error" width={650} />
+            <img src="https://i.postimg.cc/PqX2gxHC/error-404-with-the-cute-coffee-bean-mascot-free-vector.jpg" alt="Error" width={650} />
         <Link className='btn btn-dark' to='/'>Volver a Home</Link>
         </div>
     )

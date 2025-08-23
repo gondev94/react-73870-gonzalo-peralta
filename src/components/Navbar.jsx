@@ -21,7 +21,7 @@ function Navbarr() {
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to='/categories/proceso'>Procesos de café</NavDropdown.Item>
+              
               <NavDropdown.Item as={NavLink} to='/categories/mas vendidos'>
                 Más Vendidos
               </NavDropdown.Item>

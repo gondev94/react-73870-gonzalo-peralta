@@ -17,7 +17,7 @@ const productos = [
         description:'Espresso, Ruanda - Inzovu -  Variedad: Bourbon Rojo ',
         price:14,
         stock:50,
-        category:'más vendidos',
+        category:'mas vendidos',
         process:'natural',
         img:'https://i.postimg.cc/zB7PQqKK/E-RW-INZO.webp',
     },
