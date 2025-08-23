@@ -62,7 +62,7 @@ console.log(data,'data')
         {loading
         ? <LoaderComponent/>
         : <div>
-            <h1 style={{textAlign:"center"}}>{saludo} {category}</h1>
+            <h1 style={{textAlign:"center", padding:'2rem'}}>{saludo} {category}</h1>
             <ItemList data={data}/>
         </div>
         }
