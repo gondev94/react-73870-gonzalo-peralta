@@ -1,12 +1,16 @@
-# React + Vite
+# Cafetería de especialidad Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Se trata de un e-commerce desarrollado en React + Vite, que no incorpora una pasarela de pago real
 
-Currently, two official plugins are available:
+Funcionalidad : Mostrar productos, manejarlos con React, carrito y flujo de compra simulado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologías usadas: React + Vite, ESLint, estructura típica de frontend sin backend de pagos.
 
-## Expanding the ESLint configuration
+## Realizado en el curso dictado por la plataforma Coderhouse
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Profesora : Laura Therisod
+## Tutor : Christian Ovejero
+## Curso : Reactjs
+## Comisión : 73870
+## Alumno : Gonzalo Ezequiel Peralta
+
