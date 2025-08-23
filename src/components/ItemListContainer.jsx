@@ -58,7 +58,7 @@ const ItemListContainer = ({saludo}) => {
 
 console.log(data,'data')
     return (
-<<<<<<< HEAD
+        <>
         <div>
             <h1 style={{textAlign:'center'}}>{saludo} {category}</h1>
             {/* no muy recomendale */}
@@ -67,16 +67,8 @@ console.log(data,'data')
             {/* {data.map((producto)=> <p key={producto.id}> {producto.name} </p>
         )} */}
         <ItemList data={data} />
-=======
-        <>
-        {loading
-        ? <LoaderComponent/>
-        : <div>
-            <h1 style={{textAlign:"center", padding:'2rem'}}>{saludo} {category}</h1>
-            <ItemList data={data}/>
->>>>>>> test4
         </div>
-        }
+        
         </>
     )
 }
