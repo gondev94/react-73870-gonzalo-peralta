@@ -34,17 +34,6 @@ const ItemDetailContainer = () => {
 
     },[id])
 
-
-
-    //promesa aparte
-    // useEffect(()=>{
-    //     setCargando(true)
-    //     getOneProduct(id)
-    //     .then((res)=>setDetalle(res))
-    //     .catch((error)=> console.log(error))
-    //     .finally(()=> setCargando(false))
-    // },[])
-
     if(invalid){
         return(
             <div>

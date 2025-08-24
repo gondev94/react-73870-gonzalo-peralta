@@ -23,12 +23,12 @@ const ItemCount = ({stock, onAdd}) => {
 
     // se va a ejecvutar siempre que se monte y actualice el componente
     useEffect(()=>{
-        console.log('me ejecuto siempre')
+        
     })
 
     // se ejecuta solo una vez
     useEffect(()=>{
-        console.log('me ejectuo una sola vez')
+       
     },[])
 
     //
@@ -38,14 +38,19 @@ const ItemCount = ({stock, onAdd}) => {
 
 
     return (
-        <div className='d-flex justify-content-center flex-column'>
+        <>
+        {stock > 0
+
+        ?<div className='d-flex justify-content-center flex-column'>
             <div>
             <button className='btn btn-danger' onClick={restar}>-</button>
             <span className='btn'>{count}</span>
             <button className='btn btn-success' onClick={sumar}>+</button>
             </div>
-            <button className='btn btn-primary' disabled={count === 0} onClick={comprar}>comprar</button>
+            <button className='btn btn-primary' disabled={count === 0 || stock === 0} onClick={comprar}>comprar</button>
         </div>
+        : <p style={{fontSize:'2rem'}}>Lo sentimos no hay stock disponible</p>}
+        </>
     )
 }
 

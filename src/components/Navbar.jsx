@@ -10,7 +10,7 @@ import { CartContext } from '../context/CartContext';
 
 function Navbarr() {
   const {cart} = useContext(CartContext);
-  console.log('soy navbar')
+ 
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
